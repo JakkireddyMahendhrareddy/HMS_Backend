@@ -24,7 +24,7 @@ app.use(express.urlencoded({ limit: "50mb", extended: true }));
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["http://localhost:3000"],//https://hms-frontend-ecru.vercel.app/ 
+    origin: ["https://hms-frontend-ecru.vercel.app/"],// http://localhost:3000
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     credentials: true,
   })
