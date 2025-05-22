@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "node app.js",
+    "dev": "node index.js",
     "server": "nodemon app.js"
   },
   "keywords": [],
