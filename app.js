@@ -42,6 +42,10 @@ app.use("/api/tenants", tenantRouter);
 app.use("/api/payments", paymentsRoutes);
 app.use("/api/", maintenanceRouter);
 
+app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
+});
+
 
 const initializeDBAndServer = async () => {
   try {
